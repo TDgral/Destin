@@ -1,0 +1,64 @@
+:root {
+  --main-font: "Poppins", sans-serif;
+}
+* {
+}
+body {
+  margin: 0;
+  font-family: var(--main-font);
+  font-weight: 400;
+  background-image: url(./img/benjamin-voros-phIFdC6lA4E-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+.logo {
+  color: white;
+  float: left;
+  font-weight: 600;
+  letter-spacing: -3%;
+  font-size: 40px;
+}
+nav {
+  float: right;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 40px;
+  font-weight: 400;
+  font-size: 16px;
+
+  position: relative;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav a:hover {
+  color: white;
+}
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: -2px;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+nav a:hover::before {
+  width: 100%;
+  border-radius: 20px;
+}
